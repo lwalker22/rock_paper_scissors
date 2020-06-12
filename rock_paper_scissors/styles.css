@@ -1,0 +1,14 @@
+.container-fluid {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+
+.Gallery {
+  width: 30%;
+  float: left;
+  margin: 1.66%;
+  height: 400px !important;
+  object-fit: cover;
+}
