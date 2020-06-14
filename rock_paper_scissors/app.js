@@ -1,22 +1,21 @@
 
 let rpsGame = ["rock", "paper", "scissors"];
 
-var randomChoice;
+let randomChoice;
 function randomGuess() {
 randomChoice = Math.floor(Math.random()*rpsGame.length);
 
+  if (randomChoice == 0){
+    computerChoice = "rock";
+  }
+  else if (randomChoice == 1) {
+    computerChoice = "paper";
+  }
+  else {
+    computerChoice = "scissors";
+  }
 
- if (randomChoice == 0){
-   computerChoice = "rock";
- }
- else if (randomChoice == 1) {
-   computerChoice = "paper";
- }
- else {
-   computerChoice = "scissors";
- }
-
- console.log(computerChoice);
+  //console.log(computerChoice);
 }
 
  // application state
@@ -29,6 +28,7 @@ randomChoice = Math.floor(Math.random()*rpsGame.length);
  rock.addEventListener("click", (event) => {
    // callback for when rock is clicked
    userInput = "rock";
+   randomGuess();
    playGame();
 
  })
@@ -36,6 +36,7 @@ randomChoice = Math.floor(Math.random()*rpsGame.length);
  let paper = document.querySelector("#paper");
  paper.addEventListener("click", (event) => {
    userInput = "paper";
+   randomGuess();
    playGame();
 
  })
@@ -43,6 +44,7 @@ randomChoice = Math.floor(Math.random()*rpsGame.length);
  let scissors = document.querySelector("#scissors");
  scissors.addEventListener("click", (event) => {
    userInput = "scissors";
+   randomGuess();
    playGame();
  })
 
