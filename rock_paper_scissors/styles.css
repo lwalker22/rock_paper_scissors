@@ -19,10 +19,16 @@
   margin: 0 25% 0 0;
 }
 
-.row {
-  text-align:center;
-}
+
 
 #userChoice {
   height: 300px !important;
+  object-fit: cover;
+  padding-right: 5px;
+}
+
+#computerChoice {
+  height: 300px !important;
+  object-fit: cover;
+  margin-left: 5px;
 }
