@@ -3,6 +3,7 @@
   width: 50%;
   padding: 10px;
   text-align: center;
+  background-color: black;
 }
 
 .Gallery {
@@ -24,13 +25,11 @@
 #userChoice {
   height: 300px !important;
   object-fit: cover;
-  padding-right: 25px;
 }
 
 #computerChoice {
   height: 300px !important;
   object-fit: cover;
-  margin-left: 50px;
 }
 
 .sec1 {
@@ -39,4 +38,12 @@
   margin: 1%;
   object-fit: cover;
 
+}
+
+.header {
+  margin: 1.66;
+}
+
+.white {
+  color: white;
 }
