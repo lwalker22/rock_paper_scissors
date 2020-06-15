@@ -24,11 +24,19 @@
 #userChoice {
   height: 300px !important;
   object-fit: cover;
-  padding-right: 5px;
+  padding-right: 25px;
 }
 
 #computerChoice {
   height: 300px !important;
   object-fit: cover;
-  margin-left: 5px;
+  margin-left: 50px;
+}
+
+.sec1 {
+  width: 18%;
+  float: left;
+  margin: 1%;
+  object-fit: cover;
+
 }

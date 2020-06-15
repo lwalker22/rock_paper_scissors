@@ -24,10 +24,15 @@ randomChoice = Math.floor(Math.random()*rpsGame.length);
 
  // elements selected
  let rock = document.querySelector("#rock");
+ let paper = document.querySelector("#paper");
+ let scissors = document.querySelector("#scissors");
+ 
 
+ 
+
+ 
  // event listener for rock
  rock.addEventListener("click", (event) => {
-   // callback for when rock is clicked
    userInput = "rock";
    randomGuess();
    playGame();
@@ -35,7 +40,6 @@ randomChoice = Math.floor(Math.random()*rpsGame.length);
 
  })
 
- let paper = document.querySelector("#paper");
  paper.addEventListener("click", (event) => {
    userInput = "paper";
    randomGuess();
@@ -44,7 +48,6 @@ randomChoice = Math.floor(Math.random()*rpsGame.length);
 
  })
 
- let scissors = document.querySelector("#scissors");
  scissors.addEventListener("click", (event) => {
    userInput = "scissors";
    randomGuess();
@@ -74,6 +77,8 @@ var comChangeImg = document.getElementById("computerChoice")
 document.getElementById('scissors').addEventListener("click", computerGameOutput)
 var comChangeImg = document.getElementById("computerChoice")
 
+
+
    
  function userGameOutput() {
    if (userInput == "rock") {
@@ -90,6 +95,7 @@ var comChangeImg = document.getElementById("computerChoice")
 function computerGameOutput() {
   if (computerChoice == "rock") {
     comChangeImg.src = "./images/rock.jpg";
+    
   }
   else if (computerChoice == "paper") {
     comChangeImg.src = "./images/paper.jpg";
@@ -98,6 +104,8 @@ function computerGameOutput() {
     comChangeImg.src = "./images/scissors.jpg";
 }
 }
+
+
 
 // funciton userGameOutput() {
 //   if (userInput == "rock") {
@@ -125,7 +133,7 @@ function computerGameOutput() {
 
 function playGame() {
   if (userInput == computerChoice) {
-    alert("Draw");
+    drawGame();
   }
   else if (userInput == "rock" && computerChoice == "paper") {
     loseGame();
@@ -157,11 +165,16 @@ function playGame() {
 
 
 function loseGame() {
-  alert("You Lose!");
+  document.getElementById("winLose").innerHTML = "You Lose!";
 }
 
 function winGame() {
-  alert("You win!");
+  document.getElementById("winLose").innerHTML = "You Win!";
+}
+
+function drawGame() {
+  document.getElementById("winLose").innerHTML = "Draw!";
+
 }
 
 
