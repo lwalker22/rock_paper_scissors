@@ -1,6 +1,6 @@
 body {
   background-color: #423F3E;
-}.
+}
 
 container-fluid {
   margin: auto;
@@ -51,8 +51,4 @@ container-fluid {
 
 .white {
   color: white;
-}
-
-.score {
-  margin-left: 1.66%;
 }
