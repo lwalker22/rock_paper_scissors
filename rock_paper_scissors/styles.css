@@ -1,4 +1,8 @@
-.container-fluid {
+body {
+  background-color: #423F3E;
+}.
+
+container-fluid {
   margin: auto;
   width: 50%;
   padding: 10px;
@@ -41,9 +45,14 @@
 }
 
 .header {
-  margin: 1.66;
+  margin-left: 1.66%;
+  color: white;
 }
 
 .white {
   color: white;
+}
+
+.score {
+  margin-left: 1.66%;
 }
